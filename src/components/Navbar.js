@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { Link } from 'react-router-dom';
 
 import stayle from "./navbar.css"
 
@@ -30,7 +31,7 @@ const Navbar = () => {
              
             <nav>
             <img className='logo' src={logo} alt='logo'  /> 
-                <img className='UserIcon' src={UserIcon} alt='logo' /> 
+                 <Link to={`/board`}><img className='UserIcon' src={UserIcon} alt='logo' /> </Link>
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class}></div>
                     <div className={burger_class}></div>

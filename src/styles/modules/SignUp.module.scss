@@ -1,0 +1,222 @@
+.getback{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+   cursor: pointer;
+    
+}
+
+.header{
+    position: absolute;
+width: 231px;
+height: 82px;
+left: 87px;
+top: 45px;
+
+font-family: 'Overpass';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 41px;
+text-align: center;
+text-transform: capitalize;
+
+color: #000000;
+}
+
+
+.google{
+    cursor: pointer;
+position: absolute;
+width: 117px;
+height: 55px;
+left: 16px;
+top: 165px;
+}
+
+.apple{
+    cursor: pointer;
+    position: absolute;
+    width: 117px;
+    height: 55px;
+    left: 148px;
+    top: 165px;
+}
+
+
+.facebook{
+    cursor: pointer;
+    position: absolute;
+    width: 117px;
+    height: 55px;
+    left: 280px;
+    top: 165px;
+}
+
+
+.cut span:nth-child(1) {
+    position: absolute;
+width: 141px;
+height: 0px;
+left: 16px;
+top: 250px;
+border: 2px solid #6B6B6B;
+border-radius: 5px;
+}
+
+.cut p {
+    position: absolute;
+width: 42px;
+height: 21px;
+left: 195px;
+top: 246px;
+font-family: 'Overpass';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 100%;
+color: #6B6B6B;
+}
+
+.cut span:nth-child(3) {
+    position: absolute;
+    width: 141px;
+    height: 0px;
+    left: 257px;
+    top: 250px;
+    border: 2px solid #6B6B6B;
+    border-radius: 5px;
+}
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     position: absolute;
+     top: 280px;
+     left: 15px;
+}
+
+
+
+.formField{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    height: 65px;
+
+}
+
+.formInput{
+width: 382px;
+height: 45px;
+font-family: 'Overpass';
+border: none;
+background: rgba(255, 255, 255, 0.5);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(10px);
+padding-left: 60px;
+border-radius: 39px;
+}
+
+.icon{
+    width: 25px;
+    position: absolute;
+    margin: 10px 20px;
+}
+
+.checkboxContainer{
+    
+    display: flex;
+    font-size: 0.85rem;
+    flex-direction: row !important;
+    align-items: center;
+    height: 20px !important;
+    text-align: center;
+    margin-right: 150px;
+}
+
+.checkboxContainer label {
+    font-family: 'Overpass';
+    color: #1a73e8;
+}
+
+input[type="checkbox"] {
+    margin-left:20px ;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #1a73e8;
+    appearance: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+   
+}
+
+input[type="checkbox"]:checked {
+    width: 18px;
+    height: 18px;
+    background-color:  #1a73e8;
+    border-radius: 50%;
+    
+}
+input[type="checkbox"]:focus {
+    width: 18px;
+    height: 18px;
+   outline: none;
+   border: 2px solid #004aaa;
+}
+
+
+.SignUp{
+    width: 382px;
+    height: 45px;
+    font-family: 'Overpass';
+    border: none;
+    background: #27798C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 39px;
+    font-family: 'Overpass';
+    cursor: pointer;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+position: absolute;
+
+top:330px;
+
+}
+
+.Login{
+    position: absolute;
+width: 208px;
+height: 24px;
+left: 0px;
+top: 410px;
+
+font-family: 'Overpass';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+
+/* or 14px */
+letter-spacing: -0.02em;
+
+color: #000000;
+}
+
+.Login a{
+    font-family: 'Overpass';
+    color: #1a73e8;
+}
+
+
+
+
