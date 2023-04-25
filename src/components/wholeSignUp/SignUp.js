@@ -4,6 +4,14 @@ import { Link } from 'react-router-dom';
 // styles
 import styles from "../../styles/modules/SignUp.module.scss"
 
+// toastify
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+// functions
+import { validate } from './validate';
+import { notify } from './toast';
+
 // img
 import backgrond from "../../image/sign in.png"
 import getback from "../../image/GET BACK.png"
@@ -20,6 +28,53 @@ import password from "../../image/icons8-password-48.png"
 
 
 const SignUp = () => {
+
+
+    const [data,setData] =  useState({
+        name: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+        isAccepted: false,
+    })
+
+    const[errors,setErrors] = useState({});
+    const[touched,setTouched] = useState({});
+
+    useEffect(() =>{
+        setErrors(validate(data,"signup"));
+        
+    },[data,touched])
+
+    const changeHandler = event => {
+        if (event.target.name === 'isAccepted') {
+            setData({...data, [event.target.name]: event.target.checked})
+        }else {
+            setData({...data, [event.target.name]: event.target.value})
+        }
+        
+    }
+
+    const focusHandler = event => {
+        setTouched({...touched, [event.target.name]: true})
+    }
+
+    const submitHandler = event => {
+        event.preventDefault();
+        if(!Object.keys(errors).length){
+           notify("You Signed in successfully" ,"success")
+        }else{
+            notify("invalid Data" ,"error")
+            setTouched({
+                name: true,
+                email: true, 
+                password: true,
+                confirmPassword: true,
+                isAccepted: true,
+            })
+        }
+    }
+   
     return (
         <>
         <div>
@@ -27,7 +82,7 @@ const SignUp = () => {
             <Link  to={`/Board`}> <img className={styles.getback} src={getback} alt='getback' /></Link>
         </div>
         
-        <form className={styles.formContainer}>
+        <form onSubmit={submitHandler} className={styles.formContainer}>
             <h2 className={styles.header}>let me put you on the board</h2>
             <img className={styles.google} src={google} alt='google' />
             <img className={styles.apple} src={apple} alt='apple' />
@@ -39,25 +94,30 @@ const SignUp = () => {
                 </div>
                 <div className={styles.container}>
                 <div className={styles.formField}>
-                    <input  type="text" name='name' placeholder='Name' className={styles.formInput} />
+                    <input  type="text" name='name' value={data.name} onChange={changeHandler} onFocus={focusHandler} placeholder='Name' className={styles.formInput} />
                     <img className={styles.icon} src={name} alt='name' />
+                    {errors.name && touched.name && <span>{errors.name}</span>}
                 </div>
                 <div className={styles.formField}>
-                    <input  type="email" name='email' placeholder='Email' className={styles.formInput} />
+                    <input  type="email" name='email' value={data.email} onChange={changeHandler} onFocus={focusHandler} placeholder='Email' className={styles.formInput} />
                     <img className={styles.icon} src={email} alt='email' />
+                    {errors.email && touched.email && <span>{errors.email}</span>}
                 </div>
                 <div className={styles.formField}>
-                    <input  type="password" name='password' placeholder='Password' className={styles.formInput} />
+                    <input  type="password" name='password' value={data.password} onChange={changeHandler} onFocus={focusHandler} placeholder='Password' className={styles.formInput} />
                     <img className={styles.icon} src={password} alt='password' />
+                    {errors.password && touched.password && <span>{errors.password}</span>}
                 </div>
                 <div className={styles.formField}>
-                    <input  type="password" name='confirmPassword' placeholder='ConfirmPassword' className={styles.formInput} />
+                    <input  type="password" name='confirmPassword' value={data.confirmPassword} onChange={changeHandler} onFocus={focusHandler} placeholder='ConfirmPassword' className={styles.formInput} />
                     {/* <img className={styles.comfirmpassword} src={comfirmpassword} alt='comfirmpassword' /> */}
+                    {errors.confirmPassword && touched.confirmPassword && <span>{errors.confirmPassword}</span>}
                 </div>
                   <div className={styles.formField}>
                     <div className={styles.checkboxContainer}>
                     <label>i accept terms of privacy policy</label>
-                    <input type="checkbox" name='isAccepted' />
+                    <input type="checkbox" name='isAccepted' value={data.isAccepted} onChange={changeHandler} onFocus={focusHandler} />
+                    {errors.isAccepted && touched.isAccepted && <span>{errors.isAccepted}</span>}
                     </div>
                  </div>
 
@@ -68,6 +128,7 @@ const SignUp = () => {
               
                 </div>
         </form>
+        <ToastContainer />
        
         </>
     );
