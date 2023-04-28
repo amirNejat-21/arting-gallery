@@ -9,6 +9,8 @@ import Store from "./components/Store";
 import ProductReview from "./components/shared/ProductReview";
 
 
+// context
+import CartContextProvider from "./context/CartContextProvider";
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
       
       
       
+<CartContextProvider>
 
       <Routes>
           <Route path="/Main" element={<Main/>} />
@@ -29,6 +32,8 @@ function App() {
           <Route path="/ProductReview/:id" element={<ProductReview/>} />
           <Route path="/*" element={<Navigate to='/Main' />} />
         </Routes>
+        
+</CartContextProvider>
 
     </div>
   );
