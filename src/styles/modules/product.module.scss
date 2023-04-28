@@ -1,0 +1,49 @@
+.img{
+    width: 300px;
+}
+
+.container{
+  
+    border-top: 2px solid silver;
+    padding: 25px 38px;
+}
+.container h3{
+width: 81px;
+height: 45px;
+font-family: 'Overpass';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 82.7%;
+/* or 45px */
+letter-spacing: -0.145em;
+text-transform: capitalize;
+color: #000000;
+margin-bottom: 15px;
+}
+.container p{
+width: 96px;
+height: 24px;
+font-family: 'Overpass';
+font-style: normal;
+font-weight: 700;
+font-size: 19px;
+line-height: 124.2%;
+/* identical to box height, or 24px */
+text-transform: capitalize;
+color: #000000;
+}
+
+.container a{
+width: 384px;
+height: 144px;
+font-family: 'Overpass';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 124.2%;
+/* or 24px */
+text-transform: capitalize;
+color: #000000;
+}
+

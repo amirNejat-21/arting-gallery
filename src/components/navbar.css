@@ -12,7 +12,17 @@ nav{
     position: absolute;
     top:0;
     right: 0;
+    /* position: relative; */
 }
+/* nav::after {
+    border-bottom: 1px solid black;
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+   
+} */
 .logo{
     position: absolute;
     top: 0;
