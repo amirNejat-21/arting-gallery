@@ -7,10 +7,11 @@ import SignUp from "./components/wholeSignUp/SignUp";
 import Login from "./components/wholeSignUp/Login";
 import Store from "./components/Store";
 import ProductReview from "./components/shared/ProductReview";
-
+import ShopCart from "./components/ShopCart";
 
 // context
 import CartContextProvider from "./context/CartContextProvider";
+
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/SignUp" element={<SignUp/>} />
           <Route path="/Login" element={<Login/>} />
           <Route path="/Store" element={<Store/>} />
+          <Route path="/Cart" element={<ShopCart/>} />
           <Route path="/ProductReview/:id" element={<ProductReview/>} />
           <Route path="/*" element={<Navigate to='/Main' />} />
         </Routes>
