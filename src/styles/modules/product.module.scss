@@ -1,12 +1,20 @@
-.img{
-    width: 300px;
+*{
+    margin: 0;
+    padding: 0;
 }
-
 .container{
-  
     border-top: 2px solid silver;
     padding: 25px 38px;
 }
+.container img{
+    width: 300px;
+    border-bottom: 2px dashed #559AAA;;
+}
+.title__container{
+    display: flex;
+    justify-content: space-between;
+}
+    
 .container h3{
 width: 81px;
 height: 45px;
@@ -15,11 +23,10 @@ font-style: normal;
 font-weight: 400;
 font-size: 30px;
 line-height: 82.7%;
-/* or 45px */
 letter-spacing: -0.145em;
 text-transform: capitalize;
 color: #000000;
-margin-bottom: 15px;
+margin:15px 0px;
 }
 .container p{
 width: 96px;
@@ -29,9 +36,16 @@ font-style: normal;
 font-weight: 700;
 font-size: 19px;
 line-height: 124.2%;
-/* identical to box height, or 24px */
 text-transform: capitalize;
 color: #000000;
+margin:30px -50px;
+}
+
+.Review{
+   
+   margin-left: 60px;
+   
+
 }
 
 .container a{
@@ -46,4 +60,59 @@ line-height: 124.2%;
 text-transform: capitalize;
 color: #000000;
 }
+
+// .add__container{
+//     display: block;
+//     justify-content: center;
+// }
+.buttonContainer{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 80px;
+    align-items: center;
+    text-align: center;
+   
+}
+.buttonContainer button {
+    font-size: 0.9rem;
+    background-color: #559AAA;
+    border: none;
+    color: #fff;
+    height: 30px;
+    width: 140px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-left: 5px;
+  }
+
+  .smallButton {
+   
+    width: 30px !important;
+   
+    font-size: 1.6rem !important;
+    font-weight: bold;
+    line-height: 30px;
+    
+    
+  }
+  .smallButton img {
+    width: 20px;
+   margin-top: 5px;
+    
+  }
+
+  .counter {
+    display: inline-block;
+    
+    width: 20px;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+    color: black;
+    font-family: 'Overpass';
+  }
 

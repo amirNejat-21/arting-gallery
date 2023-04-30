@@ -2,7 +2,7 @@ const data = [
     {
         id: 1,
         title: "STAR WARS ",
-        price: 69,
+        price: 61.99 ,
         description:"yay",
         
         imageUrl: require("./productimg/element-x-star-wars-beware-dark-vador-pre-built-complete-skateboard-8-inches.jpg"),
