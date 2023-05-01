@@ -3,13 +3,36 @@
     padding: 0;
 }
 .container{
-    border-top: 2px solid silver;
+   
     padding: 25px 38px;
+    width: 350px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 50px 0 0;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+.container:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .container img{
-    width: 300px;
+    // width: 275px;
+    // height: 300px;
     border-bottom: 2px dashed #559AAA;;
+    // transition: all 0.5s ease;
+    margin: 20px  0;
 }
+// .container img:hover{
+//   padding-bottom: 30px;
+//   transform: rotate(-45deg);
+
+//   border-bottom: none;
+
+// }
 .title__container{
     display: flex;
     justify-content: space-between;
@@ -26,7 +49,7 @@ line-height: 82.7%;
 letter-spacing: -0.145em;
 text-transform: capitalize;
 color: #000000;
-margin:15px 0px;
+margin:15px -10px;
 }
 .container p{
 width: 96px;
@@ -38,17 +61,12 @@ font-size: 19px;
 line-height: 124.2%;
 text-transform: capitalize;
 color: #000000;
-margin:30px -50px;
+margin:30px -24px;
 }
+
+
 
 .Review{
-   
-   margin-left: 60px;
-   
-
-}
-
-.container a{
 width: 384px;
 height: 144px;
 font-family: 'Overpass';
@@ -56,15 +74,11 @@ font-style: normal;
 font-weight: 400;
 font-size: 19px;
 line-height: 124.2%;
-/* or 24px */
 text-transform: capitalize;
 color: #000000;
 }
 
-// .add__container{
-//     display: block;
-//     justify-content: center;
-// }
+
 .buttonContainer{
     display: flex;
     justify-content: end;
@@ -101,6 +115,7 @@ color: #000000;
   .smallButton img {
     width: 20px;
    margin-top: 5px;
+   
     
   }
 

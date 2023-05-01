@@ -2,27 +2,29 @@
     margin: 0;
     box-sizing: border-box;
 }
+.mainContainer{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
 nav{
     width: 100%;
     height: 4rem;
-    background-color:inherit;
     display: flex;
     justify-content: flex-end;
     padding: 1em;
     position: absolute;
     top:0;
     right: 0;
-    /* position: relative; */
+    background-color: #559AAA;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
 }
-/* nav::after {
-    border-bottom: 1px solid black;
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    bottom: 0;
-   
-} */
+
+
 .logo{
     position: absolute;
     top: 0;
@@ -33,7 +35,7 @@ nav{
 }
 
 .UserIcon{
-   position: absolute;
+   position: fixed;
    top: 17px;
    left: 17px;
    cursor: pointer;
@@ -48,7 +50,7 @@ nav{
     justify-content: space-between;
     cursor: pointer;
     margin-left: 220px; 
-    z-index: 2;
+    z-index: 20;
 }
 
 .burger-bar{
@@ -65,13 +67,14 @@ nav{
     margin: 0;
     width: 60%;
     height: 100vh;
-    z-index: 1;
+    /* z-index: 2; */
     position: fixed;
     top: 0; 
     right: 0;
     border-radius: 20px 0px 0px 0px;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
+  
 }
 
 .hidden{
@@ -79,6 +82,7 @@ nav{
 }
 .visible{
     display: inherit;
+   
 }
 
 .burger-bar.clicked:nth-child(1){
@@ -100,7 +104,7 @@ nav{
    align-items: center;
     list-style: none;
     margin-top: 100px;
-    
+  
     border-bottom: 2px dashed #000000;
     
 }

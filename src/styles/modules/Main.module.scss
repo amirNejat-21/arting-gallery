@@ -1,5 +1,6 @@
 .container{
     position: relative;
+    
 }
 
 .nav{
@@ -32,9 +33,10 @@
 
 
 .Main{
-    
+    // position: fixed;
     height: 100vh;
     width: 100%;
+    
 }
 
 .Main__txt{
@@ -49,7 +51,7 @@
     font-size: 24px;
     line-height: 35px;
     text-align: center;
-    
+    z-index: 1;
     color: #FFFFFF;
     
 }
@@ -71,7 +73,16 @@
     color: #fff;
     margin-right: 54px;
     cursor: pointer;
+  position: relative;
+  z-index: 1;
 
+
+}
+.UserIcon{
+    position: absolute;
+    z-index: 21;
+    top: 20px;
+    left: 15px;
 }
 
 

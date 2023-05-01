@@ -16,17 +16,17 @@ import Navbar from "./Navbar"
 
 const Main = () => {
     return (
-        <>
+        
         
        
           
            
             
-            
-       
+            <div>
+ <Navbar />
         <div className={styles.container}>
-        <Navbar />
-        <Link to={`/board`}><img className='UserIcon' src={UserIcon} alt='logo' /> </Link>
+       
+        <Link to={`/board`}><img className={styles.UserIcon} src={UserIcon} alt='logo' /> </Link>
                 <img src={MainImg} alt='MainImg'  className={styles.Main}/>
                 <h3 className={styles.Main__txt} >the great life style with Ema Skate Board</h3>
             <div className={styles.btn__container} >
@@ -35,7 +35,9 @@ const Main = () => {
             </div>
             
         </div>
-        </>
+            </div>
+        
+        
     );
 };
 

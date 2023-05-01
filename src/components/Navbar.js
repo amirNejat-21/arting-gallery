@@ -27,7 +27,7 @@ const Navbar = () => {
         setIsMenuClicked(!isMenuClicked)
     }
     return (
-        <div >
+        <div className="mainContainer">
              
             <nav>
             <img className='logo' src={logo} alt='logo'  /> 

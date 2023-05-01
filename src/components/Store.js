@@ -24,10 +24,10 @@ const Store = () => {
         <div >
              
             <Navbar/>
-            <Link to={`/cart`}><img className='UserIcon' src={cart} alt='cart' /> </Link>
+            <Link   to={`/cart`}><img className={styles.cart} src={cart} alt='cart' /> </Link>
             <span className={styles.counter}>{state.itemsCounter}</span>
             
-            <div style={{display:'flex',flexDirection:"column",alignItems:"center",marginTop:"100px" }}>
+            <div style={{display:'flex',flexDirection:"column",alignItems:"center",marginTop:"60px",backgroundColor:"#E3E4EA" }}>
 
             {
                 data.map(item => <Product  key={item.id} productsData={item}/>)
