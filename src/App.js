@@ -8,6 +8,9 @@ import Login from "./components/wholeSignUp/Login";
 import Store from "./components/Store";
 import ProductReview from "./components/shared/ProductReview";
 import ShopCart from "./components/ShopCart";
+import Credit from "./components/Credit";
+import Payment from "./components/Payment";
+import Purchase from "./components/Purchase";
 
 // context
 import CartContextProvider from "./context/CartContextProvider";
@@ -31,6 +34,9 @@ function App() {
           <Route path="/Login" element={<Login/>} />
           <Route path="/Store" element={<Store/>} />
           <Route path="/Cart" element={<ShopCart/>} />
+          <Route path="/Credit" element={<Credit/>} />
+          <Route path="/Payment" element={<Payment/>} />
+          <Route path="/Purchase" element={<Purchase/>} />
           <Route path="/ProductReview/:id" element={<ProductReview/>} />
           <Route path="/*" element={<Navigate to='/Main' />} />
         </Routes>

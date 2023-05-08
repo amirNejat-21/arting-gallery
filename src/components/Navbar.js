@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="mainContainer">
              
             <nav>
-            <img className='logo' src={logo} alt='logo'  /> 
+            {/* <img className='logo' src={logo} alt='logo'  />  */}
                 
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class}></div>

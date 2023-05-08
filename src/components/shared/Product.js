@@ -1,5 +1,6 @@
 import React,{useContext} from 'react';
 import { Link } from 'react-router-dom';
+
 // styles
 import styles from "../../styles/modules/product.module.scss"
 
@@ -12,11 +13,20 @@ import { quantityCount } from '../../helpers/functionss';
 import trashIcon from "../../image/trash.svg"
 
 
+
 const Product = ({productsData}) => {
     const{state,dispatch} = useContext(CartContext)
+    
+
+
+  
+
+
     return (
+        <>
+        
         <div className={styles.container}>
-            <img src={productsData.imageUrl} alt='img' />
+           <img src={productsData.imageUrl} alt='/'/>
             <div className={styles.title__container}>
                  <h3>{productsData.title}</h3>
                  <p>{productsData.price}</p>
@@ -38,6 +48,7 @@ const Product = ({productsData}) => {
             </div>
            
         </div>
+        </>
     );
 };
 
