@@ -13,16 +13,15 @@
     border: 1px solid silver;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #fff;
+    background-color: var(--nav_background);
    margin-top: 20px;
     transition: all 0.2s ease;
     text-align: center;
 }
 .container:hover {
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: var(--box-shadow)
 }
+
 
 
 .horizontal_scroll_wrapper{
@@ -104,7 +103,7 @@ font-size: 30px;
 line-height: 82.7%;
 letter-spacing: -0.145em;
 text-transform: capitalize;
-color: #000000;
+color:var(--text);
 margin:15px -10px;
 }
 .container p{
@@ -116,7 +115,7 @@ font-weight: 700;
 font-size: 19px;
 line-height: 124.2%;
 text-transform: capitalize;
-color: #000000;
+color: var(--text);
 margin:30px -24px;
 }
 
@@ -131,7 +130,7 @@ font-weight: 400;
 font-size: 19px;
 line-height: 124.2%;
 text-transform: capitalize;
-color: #000000;
+color: var(--text);
 }
 
 
@@ -145,10 +144,11 @@ color: #000000;
    
 }
 .buttonContainer button {
-    font-size: 0.9rem;
-    background-color: #559AAA;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--counter);
     border: none;
-    color: #fff;
+    color: var(--border);
     height: 30px;
     width: 140px;
     border-radius: 4px;
@@ -171,7 +171,7 @@ color: #000000;
   }
   .smallButton img {
     width: 20px;
-   margin-top: 5px;
+   margin-left: 5px;
    
     
   }
@@ -184,7 +184,7 @@ color: #000000;
     font-size: 1.2rem;
     font-weight: 700;
     
-    color: black;
+    color: var(--border);
     font-family: 'Overpass';
   }
 

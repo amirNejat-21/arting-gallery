@@ -1,5 +1,7 @@
 import React,{useContext} from 'react';
 import { Link } from 'react-router-dom';
+import{ FaArrowLeft} from 'react-icons/fa'
+import{ FaTimes} from 'react-icons/fa'
 
 // components
 import Cart from './shared/Cart';
@@ -21,7 +23,8 @@ const ShopCart = () => {
     return (
         <div  style={{backgroundColor:"#E3E4EA",height:"91vh"}}>
          <Navbar className={styles.nav}/>
-         <Link  to={`/store`}> <img className={styles.gettback} src={getback} alt='getback' /></Link>
+         <Link  to={`/store`}><FaArrowLeft className={styles.gettback}/> </Link>
+       
          <div  className={styles.cart_container} >
             <h2 >CheckOut</h2>
             <div  className={styles.container}>
@@ -33,13 +36,13 @@ const ShopCart = () => {
 
         <div className={styles.back}>
             <h2>order Summary</h2>
+                    <Link to="/store">
+                     <button className={styles.clear}  onClick={() => dispatch({type: "CLEAR"})}><FaTimes/></button>
+                    </Link>
             {
                 state.itemsCounter > 0 && <div >
-                    <Link to="/store">
-                     <button className={styles.clear}  onClick={() => dispatch({type: "CLEAR"})}><img   src={close} alt='close'/></button>
-                    </Link>
                         <p>Total Items:<span>{state.itemsCounter}</span> </p> 
-                        {/* <br style={{borderBottom:"1px solid black"}}/> */}
+                       
                         <p>subtotal :<span>{state.total} $</span> </p>
                         <div className={styles.btn_container}>
                             <Link to="/Credit">

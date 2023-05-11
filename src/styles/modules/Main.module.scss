@@ -2,6 +2,9 @@
     position: relative;
     
 }
+.body{
+    background-color: var(--body);
+}
 
 .nav{
     border-radius: 20px 0px 0px 20px;
@@ -40,7 +43,7 @@
 }
 
 .Main__txt{
-      font-family: "Permanent Marker"; 
+      font-family: "Permanent Marker"!important ; 
     position: absolute;
     width: 232px;
     height: 105px;
@@ -52,13 +55,14 @@
     line-height: 35px;
     text-align: center;
     z-index: 1;
-    color: #FFFFFF;
+    color: white;
+   
     
 }
 
 .btn__container{
     position: absolute;
-    bottom: 80px;
+    bottom: 60px;
     left: 70px;
    justify-content: space-around;
 }
@@ -66,11 +70,11 @@
 .btn{
     width: 110px;
     height: 40px;
-    border: 1px solid #fff;
+    border: 1px solid white;
     border-radius: 10px;
     font-family: "Roboto";
     background: transparent;
-    color: #fff;
+    color: white;
     margin-right: 54px;
     cursor: pointer;
   position: relative;
@@ -78,11 +82,29 @@
 
 
 }
-.UserIcon{
-    position: absolute;
+.signIn{
+    position: fixed;
     z-index: 21;
     top: 20px;
     left: 15px;
+    color: var(--icons);
+    font-size: 20px;
+}
+
+ .logo{
+    position: fixed;
+    top: 0;
+    left: 150px;
+    width: 100px;
+    height: 75px;
+    cursor: pointer;
+    z-index: 21;
+} 
+.txt{
+    font-family: Overpass;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--text);
 }
 
 

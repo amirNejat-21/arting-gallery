@@ -26,10 +26,10 @@ const Product = ({productsData}) => {
         <>
         
         <div className={styles.container}>
-           <img src={productsData.imageUrl} alt='/'/>
+           <img className='relative left-2 rounded-[10px]' src={productsData.imageUrl} alt='/'/>
             <div className={styles.title__container}>
-                 <h3>{productsData.title}</h3>
-                 <p>{productsData.price}</p>
+                 <h3  >{productsData.title}</h3>
+                 <p >{productsData.price}</p>
             </div>
             <div >
                 
@@ -40,7 +40,7 @@ const Product = ({productsData}) => {
                     {
                         isInCart(state, productsData.id) ?
                         <button  onClick={() => dispatch({type: "INCREASE", payload: productsData})}  className={styles.smallButton}>+</button> :
-                        <button onClick={() => dispatch({type: "ADD_ITEM", payload: productsData})} className={styles.add}>Add to Cart</button>
+                        <button onClick={() => dispatch({type: "ADD_ITEM", payload: productsData})} >Add to Cart</button>
                     }
 
                 </div>

@@ -1,12 +1,12 @@
 .cart_container{
-    background-color: #559AAA;
+    background-color: var(--counter);
     margin-top: 0px;
     display: grid;
     text-align: center;
     // height: 60%;
 }
 .cart_container h2 {
-    color: white;
+    
     padding: 20px;
     font-family: 'Overpass';
 font-style: normal;
@@ -14,7 +14,7 @@ font-weight: 400;
 font-size: 32px;
 line-height: 41px;
 text-align: center;
-color: #FFFFFF;
+color: var(--text);
 }
 
 .gettback{
@@ -23,24 +23,28 @@ color: #FFFFFF;
     left: 15px;
    cursor: pointer;
    z-index: 55;
+   color: var(--nav_burger);
+   font-size: 25px;
+   
 }
 
 .container{
     display: grid;
     column-gap: 90px;
     justify-content: space-between;
-    background-color: rgb(227, 228, 234);
+    background-color: var(--nav_background);
     padding: 15px;
-    border: 1px solid silver;
+  
     margin-bottom: 30px;
     border-radius: 6px;
     width: 90%;
     margin-left: 20px;
+    padding-top: 30px;
 }
 
 .back_container{
-    background-color: #E3E4EA;
-    height: 245px;
+    background-color: var(--back-checkout);
+    height: 50vh;
 }
 .back{
    height: 200px;
@@ -48,8 +52,9 @@ color: #FFFFFF;
     display: grid;
     justify-content: start;
     margin-left: 20px;
-    background: #FFFFFF;
+    background: var(--nav_background);
     border: 1px solid #FFFFFF;
+    border-top: none;
     border-radius: 0px 0px 20px 20px;
   
 
@@ -63,7 +68,7 @@ font-family: 'Overpass';
 text-align: start;
 text-transform: capitalize;
 margin: 20px ;
-color: #000000;
+color: var(--text);
 }
 
 .back p {
@@ -75,7 +80,7 @@ color: #000000;
     line-height: 20px;
    margin: 15px 20px ;
     text-transform: uppercase;
-    color: #909090;
+    color: var(--text);
 }
 
 .back span {
@@ -84,7 +89,7 @@ color: #000000;
     font-weight: 700;
     font-size: 15.6557px;
     line-height: 20px;
-    color: #909090;
+    color: var(--text);
     margin-left: 50px;
    
 }
@@ -97,7 +102,7 @@ color: #000000;
 width: 300px;
 height: 60px;
 border: none;
-background: #569AAA;
+background: var(--counter);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 30px;
 font-family: 'Overpass';
@@ -107,8 +112,8 @@ font-size: 20.5482px;
 line-height: 26px;
 text-align: center;
 text-transform: uppercase;
-color: #FFFFFF;
-margin-top: 30px ; 
+color: var(--text);
+margin-top: 10px ; 
 margin-left: 33px;
 cursor: pointer;
 }
@@ -122,8 +127,10 @@ cursor: pointer;
     align-items: center;
   margin-left: 315px;
   margin-top: -52px;
-  background-color: white;
+font-size: 25px;
   border: none;
+  color: var(--text);
+
 }
 .clear img {
     margin-top: 5px;

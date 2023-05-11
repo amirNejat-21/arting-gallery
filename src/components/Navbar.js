@@ -1,9 +1,11 @@
 import React,{useState} from 'react';
-
+import{ FaTwitter } from 'react-icons/fa'
+import{ FaFacebook } from 'react-icons/fa'
+import{ FaInstagram } from 'react-icons/fa'
 
 import stayle from "./navbar.css"
 
-import logo from "../image/LOGO.png"
+
 
 import twitter from "../image/icons8-twitter.svg"
 import facebook from "../image/icons8-facebook.svg"
@@ -30,7 +32,7 @@ const Navbar = () => {
         <div className="mainContainer">
              
             <nav>
-            {/* <img className='logo' src={logo} alt='logo'  />  */}
+            
                 
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class}></div>
@@ -47,9 +49,9 @@ const Navbar = () => {
                     <li>About</li>
                 </ul>
                 <div className='social'>
-                <img src={twitter} alt="facebook" /> 
-                <img src={facebook} alt="facebook" /> 
-                <img src={instagram} alt="facebook" /> 
+                    <FaTwitter className='duration-300 p-3 bg-[#e6edf6] rounded-[7px] text-[color:var(--icons)] text-5xl cursor-pointer hover:scale-125 hover:text-gray-900'  />
+                    <FaFacebook className='duration-300 p-3 bg-[#e6edf6] rounded-[7px]  text-[color:var(--icons)] text-5xl cursor-pointer hover:scale-125 hover:text-gray-900' />
+                    <FaInstagram className='duration-300 p-3 bg-[#e6edf6] rounded-[7px]  text-[color:var(--icons)] text-5xl cursor-pointer hover:scale-125 hover:text-gray-900'/>
                 </div>
             </div>
         </div>

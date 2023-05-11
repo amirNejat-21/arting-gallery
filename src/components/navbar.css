@@ -1,23 +1,26 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
+
 .mainContainer{
-    position: fixed;
+   position: relative;
+   width: 100%;
+   height: 4rem;
     top: 0;
     width: 100%;
-    z-index: 20;
+    /* z-index: 20; */
+   
 }
 nav{
+
     width: 100%;
     height: 4rem;
     display: flex;
     justify-content: flex-end;
     padding: 1em;
-    position: absolute;
+    position: fixed;
+    z-index: 20;
     top:0;
     right: 0;
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--nav_background);
+    border-bottom: 1.5px solid #252525;
     /* backdrop-filter: blur(2.5px); */
     /* background-color: #559AAA; */
     /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
@@ -27,21 +30,9 @@ nav{
 }
 
 
-.logo{
-    position: absolute;
-    top: 0;
-    left: 150px;
-    width: 100px;
-    height: 75px;
-    cursor: pointer;
-}
 
-.UserIcon{
-   position: fixed;
-   top: 17px;
-   left: 17px;
-   cursor: pointer;
-}
+
+
 
 .burger-menu{
     height: 84%;
@@ -52,13 +43,13 @@ nav{
     justify-content: space-between;
     cursor: pointer;
     margin-left: 220px; 
-    z-index: 20;
+    z-index: 999;
 }
 
 .burger-bar{
     width: 2.1rem;
     height: 0.25rem;
-    background-color: black;
+    background-color: var(--nav_burger);
     border-radius:5px;
     line-height: 1px;
     transform-origin: 1px;
@@ -69,13 +60,13 @@ nav{
     margin: 0;
     width: 60%;
     height: 100vh;
-    /* z-index: 2; */
+    z-index: 2;
     position: fixed;
     top: 0; 
     right: 0;
     border-radius: 20px 0px 0px 0px;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
+    background: var(--nav_background);
+    /* backdrop-filter: blur(5px); */
   
 }
 
@@ -107,7 +98,7 @@ nav{
     list-style: none;
     margin-top: 100px;
   
-    border-bottom: 2px dashed #000000;
+    border-bottom: 2px dashed var(--border);
     
 }
 
@@ -117,6 +108,7 @@ nav{
     padding: 0 20px;
     margin: 20px 0;
     cursor: pointer;
+    color: var(--text);
 }
 
 
@@ -129,6 +121,7 @@ margin-top: 75px;
 .social img{
     width: 40px;
     cursor: pointer;
+    
 }
 
 

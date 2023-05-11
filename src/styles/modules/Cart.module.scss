@@ -22,7 +22,7 @@ line-height: 20px;
 width: 98px;
 height: 20px;
 text-align: center;
-color: #000000;
+color: var(--text);
 }
 .container p {
     
@@ -32,7 +32,7 @@ font-weight: 700;
 font-size: 15.6148px;
 line-height: 20px;
 text-align: center;
-color: #000000;
+color:  var(--text);
 }
 
 .counter{
@@ -44,7 +44,7 @@ color: #000000;
 }
 
 .counter button {
-    background-color: #559AAA;
+    background-color: var(--counter);
     width: 30px;
     height: 30px;
     border: none;
@@ -57,6 +57,7 @@ color: #000000;
 
 .counter img {
  width: 20px;
+ margin-left: 5px;
 }
 
 .counter span {
@@ -64,6 +65,7 @@ color: #000000;
     font-weight: bold;
     display: flex;
     justify-content: center;
+    color: var(--border);
 
 }
 

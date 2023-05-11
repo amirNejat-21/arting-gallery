@@ -1,7 +1,9 @@
 import React,{useContext,useState} from 'react';
 import { Link } from 'react-router-dom';
+import{ BiCart } from 'react-icons/bi'
 // styles
 import styles from "../styles/modules/store.module.scss"
+
 // icon
 import cart from "../image/iconoir_add-to-cart.png"
 
@@ -34,14 +36,18 @@ const searchSkate = data.filter(item => item.title.toLocaleLowerCase().includes(
         <div >
              
             <Navbar/>
-            <Link   to={`/cart`}><img className={styles.cart} src={cart} alt='cart' /> </Link>
+            <Link   to={`/cart`}> <BiCart className='fixed z-20 top-4 left-5 text-3xl text-[color:var(--icons)]'/> </Link>
+           
             <span className={styles.counter}>{state.itemsCounter}</span>
             
-            <div style={{display:'flex',flexDirection:"column",alignItems:"center",backgroundColor:"#E3E4EA",}}>
+            <div className='flex flex-col items-center bg-[color:var(--body)]' >
               
-                    <input  value={search}  onChange={searchHandler} id="outlined-basic"  variant="outlined"  label="Search"  type='text' placeholder='search' className='mt-[100px] pl-7 pt-2 pb-2 rounded-[10px] w-[84%]' />
-                    
-               
+                   
+                  
+                    <div className={styles.search_box} >
+                        <button className={styles.btn_search}><i className="fas fa-search"></i></button>
+                        <input value={search} onChange={searchHandler} type="text" className={styles.input_search} placeholder="Type to Search..."/>
+                    </div>
 
             {
                 searchSkate.map(item => <Product  key={item.id} productsData={item}/>)
