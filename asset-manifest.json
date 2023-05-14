@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/arting-gallery/static/css/main.a74305aa.css",
+    "main.js": "/arting-gallery/static/js/main.2bd68a37.js",
+    "static/media/IMG_20230513_090109_595.jpg": "/arting-gallery/static/media/IMG_20230513_090109_595.be4407226dce45126308.jpg",
+    "static/media/IMG_20230513_090117_288.jpg": "/arting-gallery/static/media/IMG_20230513_090117_288.55e2ec5dc12e0a3988ad.jpg",
+    "static/media/IMG_20230513_090051_512.jpg": "/arting-gallery/static/media/IMG_20230513_090051_512.05ed342d17372fbdb0ed.jpg",
+    "static/media/IMG_20230513_090100_060.jpg": "/arting-gallery/static/media/IMG_20230513_090100_060.98b21df39839c1ec3870.jpg",
+    "static/media/skate board main.jpg": "/arting-gallery/static/media/skate board main.db0538e230faa8b4f21d.jpg",
+    "static/media/IMG_20230513_090050_640.jpg": "/arting-gallery/static/media/IMG_20230513_090050_640.cf9429214d11557ad6b9.jpg",
+    "static/media/IMG_20230513_090059_575.jpg": "/arting-gallery/static/media/IMG_20230513_090059_575.5d45e2bc9e5835c5a0ef.jpg",
+    "static/media/sign in B(2).png": "/arting-gallery/static/media/sign in B(2).ddf925649f477d0e0e2f.png",
+    "static/media/IMG_20230513_090108_900.jpg": "/arting-gallery/static/media/IMG_20230513_090108_900.091106f6dab6573525e7.jpg",
+    "static/media/IMG_20230513_090059_753.jpg": "/arting-gallery/static/media/IMG_20230513_090059_753.f507752c055ca7706864.jpg",
+    "static/media/IMG_20230513_090109_226.jpg": "/arting-gallery/static/media/IMG_20230513_090109_226.54ba328fcc94a5de82a2.jpg",
+    "static/media/IMG_20230513_090108_705.jpg": "/arting-gallery/static/media/IMG_20230513_090108_705.b4377e4b147051e41d4b.jpg",
+    "static/media/IMG_20230513_090125_414.jpg": "/arting-gallery/static/media/IMG_20230513_090125_414.7b84481023a421233965.jpg",
+    "static/media/map img.png": "/arting-gallery/static/media/map img.34794be894f11608ed9e.png",
+    "static/media/IMG_20230513_090108_758.jpg": "/arting-gallery/static/media/IMG_20230513_090108_758.d767f98c583de598273f.jpg",
+    "static/media/sign in.png": "/arting-gallery/static/media/sign in.7c8dd7b9fe7e774ce89b.png",
+    "static/media/IMG_20230513_090109_017.jpg": "/arting-gallery/static/media/IMG_20230513_090109_017.d119a43908abfee3106d.jpg",
+    "static/media/IMG_20230513_090109_383.jpg": "/arting-gallery/static/media/IMG_20230513_090109_383.1ef0614c643d83b551c1.jpg",
+    "static/media/IMG_20230513_090059_599.jpg": "/arting-gallery/static/media/IMG_20230513_090059_599.def31ee6c50315924a3f.jpg",
+    "static/media/IMG_20230513_090117_226.jpg": "/arting-gallery/static/media/IMG_20230513_090117_226.a468a611b973f95e666f.jpg",
+    "static/media/Sun.svg": "/arting-gallery/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
+    "index.html": "/arting-gallery/index.html",
+    "static/media/icons8-twitter.svg": "/arting-gallery/static/media/icons8-twitter.c759977ca496dcf52ec2c8797a411d1a.svg",
+    "static/media/Moon.svg": "/arting-gallery/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
+    "static/media/icons8-instagram.svg": "/arting-gallery/static/media/icons8-instagram.97209d5c4040b71ea805a5a9e587abcd.svg",
+    "static/media/trash.svg": "/arting-gallery/static/media/trash.bb8074d13c58cfc3ae320c26df47bec6.svg",
+    "static/media/icons8-facebook.svg": "/arting-gallery/static/media/icons8-facebook.9c77ac2740446eb282dfd7b913e45119.svg",
+    "main.a74305aa.css.map": "/arting-gallery/static/css/main.a74305aa.css.map",
+    "main.2bd68a37.js.map": "/arting-gallery/static/js/main.2bd68a37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a74305aa.css",
+    "static/js/main.2bd68a37.js"
+  ]
+}
