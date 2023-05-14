@@ -1,6 +1,6 @@
 .container{
     background-color: #E3E4EA;
-    height: 100vh;
+    height: 110vh;
 }
 .gettback{
     position: fixed;
@@ -8,6 +8,8 @@
     left: 15px;
    cursor: pointer;
    z-index: 55;
+   color: var(--nav_burger);
+   font-size: 25px;
 }
 
 .cart_container{
@@ -19,9 +21,14 @@
 }
 
 .cart_container h2{
-    color: white;
+    padding: 20px;
     font-family: 'Overpass';
-    padding-top: 85px;
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 41px;
+text-align: center;
+color: var(--text);
 
 }
 .cart_container h3{

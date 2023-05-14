@@ -27,38 +27,46 @@ const Main = () => {
     const slide =[
         {
              id:"1",
-            img:require("../image/1.jpg")
+            img:require("../image/IMG_20230513_090050_640.jpg")
         },
         {
              id:"2",
-            img:require("../image/2.jpg")
+            img:require("../image/IMG_20230513_090051_512.jpg")
         },
         {
              id:"3",
-            img:require("../image/3.jpg")
+            img:require("../image/IMG_20230513_090100_060.jpg")
         },
         {
              id:"4",
-            img:require("../image/1.jpg")
+            img:require("../image/IMG_20230513_090108_705.jpg")
         },
         {
              id:"5",
-            img:require("../image/2.jpg")
+            img:require("../image/IMG_20230513_090108_758.jpg")
         },
         {
             id:"6",
-            img:require("../image/3.jpg")
+            img:require("../image/IMG_20230513_090109_383.jpg")
+        },
+        {
+            id:"6",
+            img:require("../image/IMG_20230513_090109_595.jpg")
+        },
+        {
+            id:"6",
+            img:require("../image/IMG_20230513_090117_288.jpg")
         },
     ]
     
 
     const prevSlide = () => {
         const slider = document.getElementById("slider")
-        slider.scrollLeft = slider.scrollLeft -350
+        slider.scrollLeft = slider.scrollLeft -300
      } 
      const nextSlide = () => {
          const slider = document.getElementById("slider")
-         slider.scrollLeft = slider.scrollLeft +350
+         slider.scrollLeft = slider.scrollLeft +300
      } 
 
     
@@ -78,7 +86,7 @@ const Main = () => {
                 <div id='slider'  className='duration-500 w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide mt-5'> 
                    {
                     slide.map((item)=>(
-                        <img  key={item.id} className='w-[350px] h-[240px] inline-block p-2 duration-300' src={item.img} alt='img' />
+                        <img  key={item.id} className='w-[300px] h-[240px] inline-block p-2 duration-300' src={item.img} alt='img' />
                     ))
                   } 
                   

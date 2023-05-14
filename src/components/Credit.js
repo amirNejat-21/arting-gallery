@@ -1,11 +1,12 @@
 import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
+import{ FaArrowLeft} from 'react-icons/fa'
 // component
 import Navbar from './Navbar';
 // styles 
 import styles from "../styles/modules/credit.module.scss"
 // icon
-import getback from "../image/GET BACK.png"
+
 import master_card from "../image/MasterCard.png"
 
 const Credit = () => {
@@ -45,7 +46,8 @@ const Credit = () => {
     return (
         <div className={styles.container}>
              <Navbar/>
-             <Link  to={`/cart`}> <img className={styles.gettback} src={getback} alt='getback' /></Link>
+             
+             <Link  to={`/cart`}><FaArrowLeft className={styles.gettback}/> </Link>
 
              <div className={styles.cart_container}>
                 <h2>Credit Card</h2>
@@ -80,7 +82,7 @@ const Credit = () => {
                     <input maxLength={4}  type="text" name='name' onChange={validHandler}/>
                 </div>
                 <div className={styles.form_field}>
-                    <label>ccv</label>
+                    <label className={styles.ccv}>ccv</label>
                     <input maxLength={4} className={styles.form_left} type="text" name='name' onMouseEnter={back}/>
                 </div>
                 </div>

@@ -26,7 +26,7 @@ const Product = ({productsData}) => {
         <>
         
         <div className={styles.container}>
-           <img className='relative left-2 rounded-[10px]' src={productsData.imageUrl} alt='/'/>
+           <img className='relative  rounded-[10px]' src={productsData.imageUrl} alt='/'/>
             <div className={styles.title__container}>
                  <h3  >{productsData.title}</h3>
                  <p >{productsData.price}</p>

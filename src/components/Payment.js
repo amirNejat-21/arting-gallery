@@ -1,11 +1,12 @@
 import React,{useContext}  from 'react';
 import { Link } from 'react-router-dom';
+import{ FaArrowLeft} from 'react-icons/fa'
 
 // component
 import Navbar from './Navbar';
 
 // icon
-import getback from "../image/GET BACK.png"
+
 import master_card from "../image/MasterCard.png"
 import close from "../image/carbon_close-outline.png"
 import arrow from "../image/Arrow 3.png"
@@ -28,7 +29,8 @@ const Payment = () => {
     return (
         <div className={styles.container}>
         <Navbar/>
-        <Link  to={`/credit`}> <img className={styles.gettback} src={getback} alt='getback' /></Link>
+       
+        <Link  to={`/credit`}><FaArrowLeft className={styles.gettback}/> </Link>
 
         <div className={styles.cart_container}>
            <h2>Payment</h2>

@@ -14,6 +14,7 @@ import Purchase from "./components/Purchase";
 
 // context
 import CartContextProvider from "./context/CartContextProvider";
+import ProductContextProvider from "./context/ProductContextProvider";
 
 
 
@@ -24,7 +25,7 @@ function App() {
     <div className="App">
       
       
-      
+<ProductContextProvider>
 <CartContextProvider>
 
       <Routes>
@@ -42,6 +43,7 @@ function App() {
         </Routes>
         
 </CartContextProvider>
+</ProductContextProvider>
 
     </div>
   );

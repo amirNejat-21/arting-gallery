@@ -70,7 +70,7 @@
     transition: all .5s ease-in-out;
     background-color: #22a6b3;
     padding-right: 40px;
-    color:black;
+    color:var(--text);
   }
   .input_search::placeholder{
     // color:rgba(255,255,255,.5);

@@ -1,6 +1,6 @@
 .container{
-    background-color: #E3E4EA;
-    height: 100vh;
+    background-color: var(--back-checkout);
+    height: 115vh;
 }
 .gettback{
     position: fixed;
@@ -8,10 +8,12 @@
     left: 15px;
    cursor: pointer;
    z-index: 55;
+   color: var(--nav_burger);
+   font-size: 25px;
 }
 
 .cart_container{
-    background-color: #559AAA;
+    background-color: var(--counter);
     height: 55vh;
     display: flex;
     flex-direction: column;
@@ -20,24 +22,30 @@
     
 }
 .cart_container h2{
-    color: white;
+    padding: 20px;
     font-family: 'Overpass';
-    padding-top: 100px;
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 41px;
+text-align: center;
+color: var(--text);
 
 }
 
 .cart{
+    position: relative;
     width: 90%;
     height: 192px;
     background-color: white;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 10px;
     
 }
 
 .cart img {
-    position: fixed;
-    right: 30px;
+    position: relative;
+   left: 310px;
 }
 .cart h4 {
 font-family: 'Overpass';
@@ -50,7 +58,7 @@ color: #000000;
 width: 347px;
 height: 28px;
 position: relative;
-top: 82px;
+top: 12px;
 left: 17px;
 display: flex;
 justify-content: center;
@@ -58,9 +66,10 @@ justify-content: center;
 .information_container{
     display: flex;
     font-family: 'Overpass';
-    justify-content: space-around;
-    margin-top: 100px;
+    justify-content: space-around;  
+    margin-top: 50px;
     line-height: 8px;
+    
 }
 .information_container p{
 width: 82px;
@@ -92,8 +101,9 @@ color: #000000;
 width: 369px;
 height: 300px;
 margin-left: 21px;
-background: #FFFFFF;
+background: var(--back-checkout);
 border: 1px solid #FFFFFF;
+border-top: none;
 border-radius: 0px 0px 20px 20px;
 display: flex;
 flex-direction: column;
@@ -114,7 +124,7 @@ align-items: center;
 
 .form_field label {
    
-width: 92px;
+width: fit-content;
 height: 19px;
 
 
@@ -125,10 +135,11 @@ font-size: 12px;
 line-height: 15px;
 text-align: center;
 
-color: #909090;
+color: var(--text);
 }
 
 .form_field input {
+    background-color: var(--back-checkout);
 width: 349.12px;
 height: 50px;
 border: 1.56557px solid #909090;
@@ -137,6 +148,7 @@ border: none;
 border-width: 0; 
 box-shadow: none;
 border-bottom: 1px solid #909090;
+color: var(--text);
 }
 input:focus, textarea:focus, select:focus{
     outline: none;
@@ -160,6 +172,9 @@ border-bottom: 1px solid #909090;
 }
  
 .form_left{
+    margin-left: 90px;
+}
+.ccv{
     margin-left: 90px;
 }
 
@@ -188,7 +203,7 @@ font-size: 20.5482px;
 line-height: 26px;
 text-align: center;
 text-transform: uppercase;
-color: #FFFFFF;
+color:  var(--text);
 
 cursor: pointer;
 }
