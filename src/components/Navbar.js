@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { Link } from 'react-router-dom';
 import{ FaTwitter } from 'react-icons/fa'
 import{ FaFacebook } from 'react-icons/fa'
 import{ FaInstagram } from 'react-icons/fa'
@@ -7,9 +8,7 @@ import stayle from "./navbar.css"
 
 
 
-import twitter from "../image/icons8-twitter.svg"
-import facebook from "../image/icons8-facebook.svg"
-import instagram from "../image/icons8-instagram.svg"
+
 const Navbar = () => {
 
     const[burger_class,setBurgerClass] = useState("burger-bar unclicked")
@@ -43,10 +42,10 @@ const Navbar = () => {
            
             <div   className={menu_class} >
                 <ul className='side-menu'>
-                    <li>Home</li>
-                    <li>Product</li>
-                    <li>Checkout</li>
-                    <li>About</li>
+                    <Link to='/main'><li>Home</li></Link>
+                    <Link to='/store' ><li>Product</li></Link>
+                    <Link ><li>Checkout</li></Link>
+                    <Link ><li>About</li></Link>
                 </ul>
                 <div className='social'>
                     <FaTwitter className='duration-300 p-3 bg-[#e6edf6] rounded-[7px] text-[color:var(--icons)] text-5xl cursor-pointer hover:scale-125 hover:text-gray-900'  />
