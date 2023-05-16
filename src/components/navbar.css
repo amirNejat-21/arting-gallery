@@ -91,38 +91,145 @@ nav{
 
 
 
-.side-menu{
-    display: flex;
-   flex-direction: column;
-   align-items: center;
-    list-style: none;
-    margin-top: 100px;
-  
-    border-bottom: 2px dashed var(--border);
-    
-}
 
 
-.side-menu li {
-    font-family: 'Roboto';
-    padding: 0 20px;
-    margin: 20px 0;
-    cursor: pointer;
-    color: var(--text);
-}
+
 
 
 
 .social{
-display: flex;
-justify-content: space-around;
-margin-top: 75px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
 }
 .social img{
     width: 40px;
     cursor: pointer;
     
 }
+.sidebar-item{
+    /* display: flex;
+   flex-direction: column;
+   align-items: center;
+    list-style: none;
+    margin-top: 100px;
+  height: 50%; */
+  padding:.75em 1em;
+  
+  color: var(--border);
+  display: block;
+  margin: 100px 0;
+  transition: background-color .25s;
+    border-bottom: 2px dashed var(--border);
+    height: 40%;
+    
+    
+}
+.sidebar-item:hover{
+    /* background-color: antiquewhite; */
+}
+.sidebar-title{
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    margin-top: 10px;
+    background-color: var(--nav_background); 
+    border-radius: 5px;
+    border-bottom: 1px solid silver;
+    cursor: pointer;
+}
+.sidebar-title:hover{
+    background-color: var(--nav_burger);
+}
+.sidebar-title span{
+    display: flex;
+  
+}
+.sidebar-title span i{
+    margin: 5px;
+    display: inline-block;
+    width: 1.5em;
+}
+.sidebar-title .toggle-btn{
+    cursor: pointer;
+    transition: transform .3s;
+   
+}
+.sidebar-item.open .sidebar-title .toggle-btn{
+    transform: rotate(180deg);
+}
+.sidebar-content{
+    cursor: pointer;
+height: 0;
+overflow: hidden;
 
+border-radius: 5px;
+    display: flex;
+
+}
+
+.sidebar-item.open .sidebar-content{
+    background-color: var(--nav_background);
+    height: auto;
+    padding: 3px 3px;
+    margin-top: 5px;
+    /* width: 90%; */
+    width: 100%;
+
+  
+    }
+    .sidebar-item.open .sidebar-content:hover{
+        background-color: var(--nav_burger);
+    }
+
+
+
+
+
+
+/* ul{
+    list-style: none;
+    
+} */
+/* ul li {
+    display: block;
+    position: relative;
+    padding: 20px 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    width: fit-content;
+    background-color: antiquewhite;
+    width: 90% ;
+    border-radius: 5px;
+
+} */
+
+/* ul li ul.dropdown li {
+    display: block;
+    width: fit-content;
+}
+ul li ul.dropdown{
+    width: fit-content;
+    /* background: aqua; */
+    /* position: absolute;
+    z-index: 999;
+    display: none;
+    right: 0px; */
+   
+
+/* } */
+/* ul li:hover{
+    background: blueviolet;
+    
+    
+
+} */
+/* ul li:hover ul.dropdown {
+    display: block;
+   
+} */
 
 
