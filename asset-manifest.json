@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/arting-gallery/static/css/main.a74305aa.css",
-    "main.js": "/arting-gallery/static/js/main.2bd68a37.js",
+    "main.css": "/arting-gallery/static/css/main.b87af408.css",
+    "main.js": "/arting-gallery/static/js/main.f559663b.js",
     "static/media/IMG_20230513_090109_595.jpg": "/arting-gallery/static/media/IMG_20230513_090109_595.be4407226dce45126308.jpg",
     "static/media/IMG_20230513_090117_288.jpg": "/arting-gallery/static/media/IMG_20230513_090117_288.55e2ec5dc12e0a3988ad.jpg",
     "static/media/IMG_20230513_090051_512.jpg": "/arting-gallery/static/media/IMG_20230513_090051_512.05ed342d17372fbdb0ed.jpg",
@@ -21,6 +21,7 @@
     "static/media/IMG_20230513_090109_017.jpg": "/arting-gallery/static/media/IMG_20230513_090109_017.d119a43908abfee3106d.jpg",
     "static/media/IMG_20230513_090109_383.jpg": "/arting-gallery/static/media/IMG_20230513_090109_383.1ef0614c643d83b551c1.jpg",
     "static/media/IMG_20230513_090059_599.jpg": "/arting-gallery/static/media/IMG_20230513_090059_599.def31ee6c50315924a3f.jpg",
+    "static/media/lloo.jpg": "/arting-gallery/static/media/lloo.11ec03a19925d80a8065.jpg",
     "static/media/IMG_20230513_090117_226.jpg": "/arting-gallery/static/media/IMG_20230513_090117_226.a468a611b973f95e666f.jpg",
     "static/media/Sun.svg": "/arting-gallery/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "index.html": "/arting-gallery/index.html",
@@ -29,11 +30,11 @@
     "static/media/icons8-instagram.svg": "/arting-gallery/static/media/icons8-instagram.97209d5c4040b71ea805a5a9e587abcd.svg",
     "static/media/trash.svg": "/arting-gallery/static/media/trash.bb8074d13c58cfc3ae320c26df47bec6.svg",
     "static/media/icons8-facebook.svg": "/arting-gallery/static/media/icons8-facebook.9c77ac2740446eb282dfd7b913e45119.svg",
-    "main.a74305aa.css.map": "/arting-gallery/static/css/main.a74305aa.css.map",
-    "main.2bd68a37.js.map": "/arting-gallery/static/js/main.2bd68a37.js.map"
+    "main.b87af408.css.map": "/arting-gallery/static/css/main.b87af408.css.map",
+    "main.f559663b.js.map": "/arting-gallery/static/js/main.f559663b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a74305aa.css",
-    "static/js/main.2bd68a37.js"
+    "static/css/main.b87af408.css",
+    "static/js/main.f559663b.js"
   ]
 }
