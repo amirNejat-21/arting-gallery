@@ -14,33 +14,41 @@ import { CartContext } from '../context/CartContextProvider';
 import styles from "../styles/modules/shopCart.module.scss"
 
 // icons
-import close from "../image/carbon_close-outline.png"
-import getback from "../image/GET BACK.png"
+import Empty from "../image/icons8-empty-100.png"
+
 const ShopCart = () => {
 
     const{state, dispatch} = useContext(CartContext)
 
     return (
-        <div  style={{backgroundColor:"#E3E4EA",height:"91vh"}}>
+        <div  style={{backgroundColor:"#E3E4EA",height:"100vh"}}>
          <Navbar className={styles.nav}/>
          <Link  to={`/store`}><FaArrowLeft className={styles.gettback}/> </Link>
        
          <div  className={styles.cart_container} >
             <h2 >CheckOut</h2>
             <div  className={styles.container}>
+               
                 {state.selectedItems.map(item => <Cart key={item.id} data={item}/>)}
+                {
+                state.itemsCounter === 0 && !state.checkout && <div >
+                     <img src={Empty} alt='Empty' className='relative top-8   left-28 cursor-pointer hover:scale-110 '/>
+                        <h3 className='relative text-3xl  top-44 left-5 text-[color:var(--text)]' >Want to buy?</h3>
+                        <Link to="/store" className={styles.back_shop}>Go to shop</Link>
+                    </div>
+            }
             </div>
          </div>
 
         <div className={styles.back_container}>
 
         <div className={styles.back}>
+            {
+                state.itemsCounter > 0 && <div >
             <h2>order Summary</h2>
                     <Link to="/store">
                      <button className={styles.clear}  onClick={() => dispatch({type: "CLEAR"})}><FaTimes/></button>
                     </Link>
-            {
-                state.itemsCounter > 0 && <div >
                         <p>Total Items:<span>{state.itemsCounter}</span> </p> 
                        
                         <p>subtotal :<span>{state.total} $</span> </p>
@@ -52,18 +60,13 @@ const ShopCart = () => {
                         </div>
                     </div>
             }
+           
             {
-                // state.itemsCounter === 0 && !state.checkout && <div >
-                //         <h3>Want to buy?</h3>
-                //         <Link to="/store">Go to shop</Link>
-                //     </div>
-            }
-            {/* {
                 state.checkout && <div >
                         <h3>Checked out successfully</h3>
                         <Link to="/store">Buy More</Link>
                     </div>
-            } */}
+            }
         </div>
         </div>
         </div>

@@ -1,5 +1,5 @@
 import React,{useContext} from 'react';
-import{ FaBackward } from 'react-icons/fa'
+
 // context
 import { CartContext } from '../../context/CartContextProvider';
 

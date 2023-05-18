@@ -74,7 +74,7 @@ const Main = () => {
             <div className={styles.body}>
         <Navbar />
         <Link to={`/board`}> <FaSignInAlt className={styles.signIn}/> </Link>
-        <img fill="currentColor" className={styles.logo} src={logo} alt='logo'  /> 
+        {/* <img fill="currentColor" className={styles.logo} src={logo} alt='logo'  />  */}
          <div  className='group border-b-2   items-center  '>
         <DarkMode className={styles.darkMode}/>
         <div className='flex   justify-center '>

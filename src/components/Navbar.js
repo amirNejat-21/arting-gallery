@@ -88,9 +88,9 @@ const Navbar = () => {
                    </div>
                 </div>
                 <div className='social'>
-                    <FaWhatsapp className='duration-300 p-3 bg-[#e6edf6] rounded-[7px] text-[color:var(--icons)] text-5xl cursor-pointer hover:scale-125 hover:text-gray-900'  />
-                    <FaTelegram className='duration-300 p-3 bg-[#e6edf6] rounded-[7px]  text-[color:var(--icons)] text-5xl cursor-pointer hover:scale-125 hover:text-gray-900' />
-                    <FaInstagram className='duration-300 p-3 bg-[#e6edf6] rounded-[7px]  text-[color:var(--icons)] text-5xl cursor-pointer hover:scale-125 hover:text-gray-900'/>
+                    <FaWhatsapp className='duration-300 p-3  rounded-[7px] text-[color:var(--icons)] text-6xl cursor-pointer hover:scale-125 hover:text-[#28D146]'  />
+                    <FaTelegram className='duration-300 p-3  rounded-[7px]  text-[color:var(--icons)] text-6xl cursor-pointer hover:scale-125 hover:text-[#229ED9]' />
+                    <FaInstagram className='duration-300 p-3  rounded-[7px]  text-[color:var(--icons)] text-6xl cursor-pointer hover:scale-125 hover:text-[#E1306C]'/>
                 </div>
             </div>
         </div>

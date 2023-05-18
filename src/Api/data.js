@@ -6,6 +6,12 @@ const data = [
         price: 61.99 ,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090050_640.jpg"),
+        variants: [
+            {size: "20x24 inches",  price: 69},
+            {size: "24x30 inches",  price: 79},
+            {size: "20x24 inches",  price:59},
+            {size: "24x30 inches",  price: 69},
+        ],
     },
     {
         id: 2,
