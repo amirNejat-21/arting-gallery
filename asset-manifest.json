@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/arting-gallery/static/css/main.b87af408.css",
-    "main.js": "/arting-gallery/static/js/main.f559663b.js",
+    "main.css": "/arting-gallery/static/css/main.f5121e77.css",
+    "main.js": "/arting-gallery/static/js/main.bc49686a.js",
     "static/media/IMG_20230513_090109_595.jpg": "/arting-gallery/static/media/IMG_20230513_090109_595.be4407226dce45126308.jpg",
     "static/media/IMG_20230513_090117_288.jpg": "/arting-gallery/static/media/IMG_20230513_090117_288.55e2ec5dc12e0a3988ad.jpg",
     "static/media/IMG_20230513_090051_512.jpg": "/arting-gallery/static/media/IMG_20230513_090051_512.05ed342d17372fbdb0ed.jpg",
@@ -30,11 +30,11 @@
     "static/media/icons8-instagram.svg": "/arting-gallery/static/media/icons8-instagram.97209d5c4040b71ea805a5a9e587abcd.svg",
     "static/media/trash.svg": "/arting-gallery/static/media/trash.bb8074d13c58cfc3ae320c26df47bec6.svg",
     "static/media/icons8-facebook.svg": "/arting-gallery/static/media/icons8-facebook.9c77ac2740446eb282dfd7b913e45119.svg",
-    "main.b87af408.css.map": "/arting-gallery/static/css/main.b87af408.css.map",
-    "main.f559663b.js.map": "/arting-gallery/static/js/main.f559663b.js.map"
+    "main.f5121e77.css.map": "/arting-gallery/static/css/main.f5121e77.css.map",
+    "main.bc49686a.js.map": "/arting-gallery/static/js/main.bc49686a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b87af408.css",
-    "static/js/main.f559663b.js"
+    "static/css/main.f5121e77.css",
+    "static/js/main.bc49686a.js"
   ]
 }
