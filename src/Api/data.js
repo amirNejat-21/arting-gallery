@@ -6,12 +6,13 @@ const data = [
         price: 61.99 ,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090050_640.jpg"),
-        variants: [
-            {size: "20x24 inches",  price: 69},
-            {size: "24x30 inches",  price: 79},
-            {size: "20x24 inches",  price:59},
-            {size: "24x30 inches",  price: 69},
-        ],
+        variants: {
+                    "30*40":79.99,
+                     "40*40":87.99,
+                    "50*60":43.99,
+                    "80*100":52.99
+                },
+       
     },
     {
         id: 2,
@@ -20,6 +21,12 @@ const data = [
         price: 45.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090051_512.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
        
 
     },
@@ -30,6 +37,12 @@ const data = [
         price: 55.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090059_575.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
     {
         id: 4,
@@ -38,6 +51,12 @@ const data = [
         price: 63.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090059_599.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
     {
         id: 5,
@@ -46,6 +65,12 @@ const data = [
         price: 82.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090059_753.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
     {
         id: 6,
@@ -54,6 +79,12 @@ const data = [
         price: 64.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090100_060.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
     {
         id: 7,
@@ -62,6 +93,12 @@ const data = [
         price: 75.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090108_705.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
         
     },
     {
@@ -71,6 +108,12 @@ const data = [
         price: 54.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090108_758.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
     {
         id: 9,
@@ -79,6 +122,12 @@ const data = [
         price: 35.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090108_900.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
     {
         id: 10,
@@ -87,6 +136,12 @@ const data = [
         price: 62.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090109_017.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
     {
         id: 11,
@@ -95,6 +150,12 @@ const data = [
         price: 62.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090109_226.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
     {
         id: 12,
@@ -103,6 +164,12 @@ const data = [
         price: 62.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090109_383.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
     {
         id: 13,
@@ -111,6 +178,12 @@ const data = [
         price: 62.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090109_595.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
     {
         id: 14,
@@ -119,6 +192,12 @@ const data = [
         price: 62.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090117_226.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
     {
         id: 15,
@@ -127,6 +206,12 @@ const data = [
         price: 62.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090117_288.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
     {
         id: 16,
@@ -135,6 +220,12 @@ const data = [
         price: 62.99,
         description:"Beautiful hand made pice with the (mind peace) design Powerful that come in all size and color   ",
         imageUrl: require("./productimg/IMG_20230513_090125_414.jpg"),
+        variants: {
+            "30*40":79,
+             "40*40":87,
+            "50*60":43,
+            "80*100":52
+        },
     },
    
 ];

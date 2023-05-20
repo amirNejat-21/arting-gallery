@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import React,{useContext,useState} from 'react';
 
 // context
 import { CartContext } from '../../context/CartContextProvider';
@@ -14,7 +14,8 @@ const Cart = (props) => {
     const{dispatch} = useContext(CartContext)
 
     const{imageUrl,title,price,quantity} = props.data;
-
+   
+  
     return (
         <div className={styles.container}>
             <img   className={styles.product__img} src={imageUrl} alt='img'/>
