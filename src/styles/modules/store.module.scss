@@ -12,7 +12,7 @@
     left: 40px;
     font-size: 0.90rem;
     font-weight: bold;
-    z-index: 21;
+    z-index: 999999;
     color: var(--border);
 }
 
@@ -20,7 +20,7 @@
     position: fixed;
     top: 15px;
     left: 20px;
-    z-index: 21;
+    z-index: 99999999;
 }
 
 
@@ -54,7 +54,11 @@
     width: fit-content;
     height: fit-content;
     position: relative;
-    margin-top: 100px;
+    margin-bottom: 150px;
+    top: 150px;
+    left: 625px;
+    display: flex;
+    justify-content: center;
 
     
   }
@@ -108,5 +112,22 @@
     background-color: transparent;
     border-bottom:1px solid var(--border);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+
+
+  @media screen and (max-width: 989px) {
+    .search_box{
+      left:250px
+    }
+  }
+
+
+
+
+
+  @media screen and (max-width: 640px){
+    .search_box{
+      left:40px
+    }
   }
   

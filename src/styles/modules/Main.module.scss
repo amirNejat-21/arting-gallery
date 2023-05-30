@@ -1,7 +1,32 @@
 .container{
     position: relative;
-    
 }
+.container h2 {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 10%;
+    font-weight: 900;
+    padding-left: 3rem;
+    margin-top: 130px;
+    color: var(--text);
+}
+.cont{
+    display: grid;
+    grid-row-gap: 3rem;
+    grid-column-gap: 2.5rem;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    margin-top: 30px ;
+  
+    height: 100%;
+}
+
+.box{
+    grid-column: span 4;
+padding-right: 2.5rem;
+padding-left: 3rem;
+// margin-top: 30px;
+}
+
 .body{
     background-color: var(--body);
 }
@@ -36,55 +61,41 @@
 
 
 .Main{
-    // position: fixed;
-    height: 100vh;
+position: relative;
     width: 100%;
+   height: 70%;
     
+   
 }
 
-.Main__txt{
-      font-family: "Permanent Marker"!important ; 
-    position: absolute;
-    width: 232px;
-    height: 105px;
-    left: 91px;
-    top: 450px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 35px;
-    text-align: center;
-    z-index: 1;
-    color: white;
-   
-    
-}
+
 
 .btn__container{
-    position: absolute;
-    bottom: 60px;
-    left: 70px;
-   justify-content: space-around;
+    position: relative;
+  
+    bottom: 310px;
+    left: 11%;
+    display: flex;
+       justify-content: space-evenly;
+       width: 80%;
 }
 
 .btn{
-    width: 110px;
-    height: 40px;
-    border: 1px solid white;
-    border-radius: 10px;
+    width: 150px;
+    height: 75px;
+    border: 3px solid var(--text);
+    border-radius: 25px 5px;
     font-family: "Roboto";
-    background: transparent;
-    color: white;
-    margin-right: 54px;
+    color: var(--text);
     cursor: pointer;
-  position: relative;
   z-index: 1;
+  font-size: 1.3rem;
 
 
 }
 .signIn{
     position: fixed;
-    z-index: 21;
+    z-index: 9998;
     top: 20px;
     left: 15px;
     color: var(--icons);
@@ -93,13 +104,13 @@
 
  .logo{
     position: fixed;
-    top: 0;
-    left: 165px;
-    width: 60px;
-    height: 63px;
+    top: 0px;
+    left: 30.5vw;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
-    z-index: 21;
-    background-color: black;
+    z-index: 1;
+    // background-color: black;
  
    
 
@@ -109,6 +120,103 @@
     font-size: 20px;
     font-weight: 900;
     color: var(--text);
+    margin-top: 30px;
+    width: fit-content;
+}
+
+
+@media screen and (max-width: 769px) {
+    .container h2{
+        margin-top: 0;
+        font-size: 2rem;
+    }
+    .Main{
+        width: 100%;
+        height:60vw ;
+    }
+ 
+    .box img {
+        // width: 100px;
+    }
+    .box h3 {
+        font-size: 2rem;
+    }
+    .cont{
+        margin-top: 60px;
+    }
+   
+    .btn__container{
+        position: relative;
+        // bottom: 160px;
+        // padding: 150px 0;
+        top: -100px;
+        left: 11%;
+        display: flex;
+           justify-content: space-evenly;
+           width: 80%;
+
+    }
+    .btn{
+        width: 130px;
+        height: 45px;
+        border: 2px solid var(--text);
+        border-radius: 25px 5px;
+        font-family: "Roboto";
+        color: var(--text);
+        cursor: pointer;
+      z-index: 1;
+      font-size: 0.9rem;
+    
+    
+    }
+}
+@media screen and (max-width: 640px){
+   
+    .container h2{
+        margin-top: 50px;
+        font-size: 1rem;
+    }
+    .Main{
+        width: 100vw;
+        height: 40vh;
+    }
+    .cont{
+        display: grid;
+        // grid-row-gap: 3rem;
+        // grid-column-gap: 2.5rem;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        margin-top: 80px;
+      
+    }
+    .box h3 {
+        font-size: 1rem;
+    }
+    
+    .btn__container{
+        position: relative;
+        top: -100px;
+        // padding: 150px 0;
+        // margin-top: 30px;
+        // margin-bottom: 30px;
+      
+        left: 11%;
+        display: flex;
+           justify-content: space-evenly;
+           width: 80%;
+    }
+    .btn{
+        width: 70px;
+        height: 25px;
+        border: 2px solid var(--text);
+        border-radius: 25px 5px;
+        font-family: "Roboto";
+        color: var(--text);
+        cursor: pointer;
+      z-index: 1;
+      font-size: 0.6rem;
+    
+    
+    }
 }
 
 

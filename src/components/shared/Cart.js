@@ -18,12 +18,12 @@ const Cart = (props) => {
   
     return (
         <div className={styles.container}>
+            
             <img   className={styles.product__img} src={imageUrl} alt='img'/>
-            <div >
+            <div id='text' className='flex justify-between items-center w-[900px] mb-14 ' >
                 <h3>{title}</h3>
                 <p>{price} $</p>
             </div>
-            
             <div  className={styles.counter}>
                 {
                     quantity > 1 ? 

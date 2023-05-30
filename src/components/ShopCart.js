@@ -22,7 +22,7 @@ const ShopCart = () => {
 
     return (
         <div  style={{backgroundColor:"#E3E4EA",height:"100vh"}}>
-         <Navbar className={styles.nav}/>
+         <Navbar />
          <Link  to={`/store`}><FaArrowLeft className={styles.gettback}/> </Link>
        
          <div  className={styles.cart_container} >
@@ -32,8 +32,8 @@ const ShopCart = () => {
                 {state.selectedItems.map(item => <Cart key={item.id} data={item}/>)}
                 {
                 state.itemsCounter === 0 && !state.checkout && <div >
-                     <img src={Empty} alt='Empty' className='relative top-8   left-28 cursor-pointer hover:scale-110 '/>
-                        <h3 className='relative text-3xl  top-44 left-5 text-[color:var(--text)]' >Want to buy?</h3>
+                     <img src={Empty} alt='Empty' className='relative top-8   left-[690px] cursor-pointer hover:scale-110 '/>
+                        <h3 className='relative text-3xl  top-44 left-[600px] text-[color:var(--text)]' >Want to buy?</h3>
                         <Link to="/store" className={styles.back_shop}>Go to shop</Link>
                     </div>
             }
