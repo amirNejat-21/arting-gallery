@@ -17,7 +17,6 @@ import styles from '../../styles/modules/review.module.scss'
 
 
 
-
 const ProductReview = (props) => {
     const params = useParams();
     const id = params.id;
@@ -28,8 +27,11 @@ const ProductReview = (props) => {
 
 
    
-   
+
+  
+ 
     return (
+        
         <>
         <Navbar/>
         <Link   to={`/store`}> <FaArrowLeft className='fixed z-20 top-4 left-5 text-3xl text-[color:var(--icons)]'/> </Link>
@@ -46,7 +48,9 @@ const ProductReview = (props) => {
             <p >{description}</p>
             
                 <Link to="/Store" >Back to Shop</Link>
-        
+
+
+               
     </div>
     </>
     );

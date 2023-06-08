@@ -2,12 +2,12 @@
     position: relative;
 }
 .container h2 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     position: absolute;
-    top: 10%;
+    top: 0%;
     font-weight: 900;
     padding-left: 3rem;
-    margin-top: 130px;
+    margin-top: 30px;
     color: var(--text);
 }
 .cont{
@@ -31,33 +31,33 @@ padding-left: 3rem;
     background-color: var(--body);
 }
 
-.nav{
-    border-radius: 20px 0px 0px 20px;
-    height: 100vh;
-    width: 218px;
-    z-index: 30;
-    background: #E6E6E6;
-    position: absolute;
-    right: 0;
-    ul{
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 150px;
+// .nav{
+//     border-radius: 20px 0px 0px 20px;
+//     height: 100vh;
+//     width: 218px;
+//     z-index: 30;
+//     background: #E6E6E6;
+//     position: absolute;
+//     right: 0;
+//     ul{
+//         list-style: none;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         margin-top: 150px;
         
-    }
-    li{
-        font-family: "Roboto";
-        font-size: 20px;
-       cursor: pointer;
-        padding: 0 20px;
-        margin: 25px 0;
+//     }
+//     li{
+//         font-family: "Roboto";
+//         font-size: 20px;
+//        cursor: pointer;
+//         padding: 0 20px;
+//         margin: 25px 0;
         
     
 
-    }
-}
+//     }
+// }
 
 
 .Main{
@@ -73,7 +73,7 @@ position: relative;
 .btn__container{
     position: relative;
   
-    bottom: 310px;
+    bottom: 100px;
     left: 11%;
     display: flex;
        justify-content: space-evenly;
@@ -81,15 +81,15 @@ position: relative;
 }
 
 .btn{
-    width: 150px;
-    height: 75px;
+    width: 130px;
+    height: 65px;
     border: 3px solid var(--text);
     border-radius: 25px 5px;
     font-family: "Roboto";
     color: var(--text);
     cursor: pointer;
   z-index: 1;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 
 
 }
@@ -117,7 +117,7 @@ position: relative;
 } 
 .txt{
     font-family: Overpass;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 900;
     color: var(--text);
     margin-top: 30px;
@@ -138,9 +138,7 @@ position: relative;
     .box img {
         // width: 100px;
     }
-    .box h3 {
-        font-size: 2rem;
-    }
+    
     .cont{
         margin-top: 60px;
     }
@@ -169,12 +167,13 @@ position: relative;
     
     
     }
+   
 }
 @media screen and (max-width: 640px){
    
     .container h2{
         margin-top: 50px;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .Main{
         width: 100vw;
@@ -188,9 +187,7 @@ position: relative;
         margin-top: 80px;
       
     }
-    .box h3 {
-        font-size: 1rem;
-    }
+   
     
     .btn__container{
         position: relative;
@@ -205,17 +202,21 @@ position: relative;
            width: 80%;
     }
     .btn{
-        width: 70px;
-        height: 25px;
+        width: 85px;
+        height: 40px;
         border: 2px solid var(--text);
         border-radius: 25px 5px;
         font-family: "Roboto";
         color: var(--text);
         cursor: pointer;
       z-index: 1;
-      font-size: 0.6rem;
+      font-size: 0.8rem;
+      font-weight: 500;
     
     
+    }
+    .txt{
+        font-size: 20px;
     }
 }
 

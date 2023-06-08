@@ -85,6 +85,7 @@ const Main = () => {
          slider.scrollLeft = slider.scrollLeft +260
      } 
 
+
     
     return (
             <div className={styles.body}>
@@ -97,8 +98,10 @@ const Main = () => {
              <DarkMode />
             </div>
         <div className='flex   justify-center  '>
+
             <h1 className={styles.txt}>آروین گالری</h1>
         </div>
+        
                 <div  className='hidden group-hover:block absolute top-[40%] max-md:top-[37%] max-sm:top-[33%] -translate-x-0 translate-y[-50%] left-[17px] text-2xl rounded-full p-2 max-md:p-1 max-sm:p-0 bg-[color:var(--text-reverse)]  text-[color:var(--border)] cursor-pointer '>
                     <BsChevronCompactLeft onClick={prevSlide} size={30}/>
                 </div>
@@ -135,28 +138,29 @@ const Main = () => {
             <Link to="/store"><button className={styles.btn}>Buy Now</button></Link>
                  <button className={styles.btn}>Learn more</button>
             </div>
+           
             </div>
                <div className={styles.cont}>
 
                 <div className={styles.box} >
-                  <img className='w-[110px] ' src={material} alt='material'/>
-                  <h3 className='text-4xl font-[600] text-[var(--text)]'>The best  materials for making board </h3>
-                  <p className='mt-[10px] font-[500] text-[var(--text)]'> Lorem ipsum odor amet, consectetuer adipiscing elit. Ac Lorem ipsum odor amet, consectetuer adipiscing el Lorem ipsum odor amet, consectetuer adipiscing</p>
+                  <img className='w-[140px] ' src={material} alt='material'/>
+                  <h3 className='text-2xl font-[600] text-[var(--text)]'>The best  materials for making board </h3>
+                  <p className='text-lg mt-[10px] font-[500] text-[var(--text)]'> Lorem ipsum odor amet, consectetuer adipiscing elit. Ac Lorem ipsum odor amet, consectetuer adipiscing el Lorem ipsum odor amet, consectetuer adipiscing</p>
                 </div>
                 <div className={styles.box}>
-                  <img  className='w-[70px]  mt-[10px] pb-7' src={board} alt='material'/>
-                  <h3 className='text-4xl font-[600] text-[var(--text)]'>professional hand made art </h3>
-                  <p className='mt-[10px] font-[500] text-[var(--text)]'> Lorem ipsum odor amet, consectetuer adipiscing elit. Ac Lorem ipsum odor amet, consectetuer adipiscing el Lorem ipsum odor amet, consectetuer adipiscing</p>
+                  <img  className='w-[80px]  mt-[10px] pb-7' src={board} alt='material'/>
+                  <h3 className='text-2xl font-[600] text-[var(--text)]'>professional hand made art </h3>
+                  <p className='text-lg mt-[10px] font-[500] text-[var(--text)]'> Lorem ipsum odor amet, consectetuer adipiscing elit. Ac Lorem ipsum odor amet, consectetuer adipiscing el Lorem ipsum odor amet, consectetuer adipiscing</p>
                 </div>
                 <div className={styles.box}>
-                  <img className='w-[110px]' src={handshake} alt='material'/>
-                  <h3 className='text-4xl font-[600] text-[var(--text)]'>Easy to make deal</h3>
-                  <p className='mt-[10px] font-[500] text-[var(--text)]'> Lorem ipsum odor amet, consectetuer adipiscing elit. Ac Lorem ipsum odor amet, consectetuer adipiscing el Lorem ipsum odor amet, consectetuer adipiscing</p>
+                  <img className='w-[140px]' src={handshake} alt='material'/>
+                  <h3 className='text-2xl font-[600] text-[var(--text)]'>Easy to make deal</h3>
+                  <p className='text-lg mt-[10px] font-[500] text-[var(--text)]'> Lorem ipsum odor amet, consectetuer adipiscing elit. Ac Lorem ipsum odor amet, consectetuer adipiscing el Lorem ipsum odor amet, consectetuer adipiscing</p>
                 </div>
                 <div className={styles.box}>
-                  <img className='w-[110px]' src={delivery} alt='material'/>
-                  <h3 className='text-4xl font-[600] text-[var(--text)]'>Fast delivery </h3>
-                  <p className='mt-[10px]  font-[500] text-[var(--text)]'> Lorem ipsum odor amet, consectetuer adipiscing elit. Ac Lorem ipsum odor amet, consectetuer adipiscing el Lorem ipsum odor amet, consectetuer adipiscing</p>
+                  <img className='w-[140px]' src={delivery} alt='material'/>
+                  <h3 className='text-2xl font-[600] text-[var(--text)]'>Fast delivery </h3>
+                  <p className='text-lg mt-[10px]  font-[500] text-[var(--text)]'> Lorem ipsum odor amet, consectetuer adipiscing elit. Ac Lorem ipsum odor amet, consectetuer adipiscing el Lorem ipsum odor amet, consectetuer adipiscing</p>
                 </div>
                 </div>
                 <News/>
