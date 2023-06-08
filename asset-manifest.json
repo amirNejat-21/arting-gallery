@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/arting-gallery/static/css/main.389a67a0.css",
-    "main.js": "/arting-gallery/static/js/main.2483cce4.js",
+    "main.css": "/arting-gallery/static/css/main.ac33b494.css",
+    "main.js": "/arting-gallery/static/js/main.27ddf7b1.js",
     "static/media/IMG_20230513_090109_595.jpg": "/arting-gallery/static/media/IMG_20230513_090109_595.be4407226dce45126308.jpg",
     "static/media/IMG_20230513_090117_288.jpg": "/arting-gallery/static/media/IMG_20230513_090117_288.55e2ec5dc12e0a3988ad.jpg",
     "static/media/IMG_20230513_090051_512.jpg": "/arting-gallery/static/media/IMG_20230513_090051_512.05ed342d17372fbdb0ed.jpg",
@@ -22,21 +22,21 @@
     "static/media/IMG_20230513_090059_599.jpg": "/arting-gallery/static/media/IMG_20230513_090059_599.def31ee6c50315924a3f.jpg",
     "static/media/IMG_20230513_090117_226.jpg": "/arting-gallery/static/media/IMG_20230513_090117_226.a468a611b973f95e666f.jpg",
     "static/media/logo.svg": "/arting-gallery/static/media/logo.9521a3fd4194de9e7b043f0193931845.svg",
+    "static/media/hhhorizon.svg": "/arting-gallery/static/media/hhhorizon.70306acd113d97bde74291d8fed907ad.svg",
     "static/media/Sun.svg": "/arting-gallery/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "index.html": "/arting-gallery/index.html",
     "static/media/icons8-twitter.svg": "/arting-gallery/static/media/icons8-twitter.c759977ca496dcf52ec2c8797a411d1a.svg",
     "static/media/blob-scene-haikei(2).svg": "/arting-gallery/static/media/blob-scene-haikei(2).8afc01f99bcce342681a1b4d86c88a73.svg",
-    "static/media/wave-haikei(2).svg": "/arting-gallery/static/media/wave-haikei(2).890e269b8152bf8dfe930701bf770b1d.svg",
     "static/media/Moon.svg": "/arting-gallery/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
-    "static/media/wave-haikei(6).svg": "/arting-gallery/static/media/wave-haikei(6).7736e7343ac415dca7b506509fe253ac.svg",
+    "static/media/wave-haikei(6).svg": "/arting-gallery/static/media/wave-haikei(6).f13cbb625520707f1ade0dc0b53cd161.svg",
     "static/media/icons8-instagram.svg": "/arting-gallery/static/media/icons8-instagram.97209d5c4040b71ea805a5a9e587abcd.svg",
     "static/media/trash.svg": "/arting-gallery/static/media/trash.bb8074d13c58cfc3ae320c26df47bec6.svg",
     "static/media/icons8-facebook.svg": "/arting-gallery/static/media/icons8-facebook.9c77ac2740446eb282dfd7b913e45119.svg",
-    "main.389a67a0.css.map": "/arting-gallery/static/css/main.389a67a0.css.map",
-    "main.2483cce4.js.map": "/arting-gallery/static/js/main.2483cce4.js.map"
+    "main.ac33b494.css.map": "/arting-gallery/static/css/main.ac33b494.css.map",
+    "main.27ddf7b1.js.map": "/arting-gallery/static/js/main.27ddf7b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.389a67a0.css",
-    "static/js/main.2483cce4.js"
+    "static/css/main.ac33b494.css",
+    "static/js/main.27ddf7b1.js"
   ]
 }
